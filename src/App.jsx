@@ -9,6 +9,7 @@ function App() {
     axios
     .get('https://api.adviceslip.com/advice')
     .then(res => setAdviceSlip(res.data.slip))
+    .catch(err => console.log(err))
   }, []);
 
   return (
