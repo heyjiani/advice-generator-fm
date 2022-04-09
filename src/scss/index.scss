@@ -1,11 +1,10 @@
 @import './reset';
+@import './variables';
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
 body {
-  width: 100%;
-  height: 100%;
-  background-color: hsl(218, 23%, 16%);
+  background-color: $dark-blue;
   font-family: 'Manrope', sans-serif;
 }
 
@@ -23,14 +22,14 @@ body {
   border-radius: 15px;
   margin: auto;
   padding: 2em 1.2em;
-  background-color: hsl(217, 19%, 24%);
+  background-color: $dark-grayish-blue;
   display: flex;
   flex-direction: column;
   text-align: center;
 
   &__header {
     padding-top: 1.5em;
-    color: hsl(150, 100%, 66%);
+    color: $neon-green;
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 0.3em;
@@ -38,7 +37,7 @@ body {
 
   &__text {
     padding: 0.8em;
-    color: hsl(193, 38%, 86%);
+    color: $light-cyan;
     font-size: 27px;
   }
 
@@ -51,17 +50,17 @@ body {
       width: 5em;
       height: 5em;
       border-radius: 50%;
-      background-color: hsl(150, 100%, 66%);
+      background-color: $neon-green;
       margin: 2.5em;
       border: none;
     }
 
     .dice:hover {
-      box-shadow: 0px 0px 30px 2px hsl(150, 70%, 61%);
+      box-shadow: $neon-green-active;
     }
     
     .dice:active {
-      box-shadow: 0px 0px 30px 2px hsl(150, 70%, 61%);
+      box-shadow: $neon-green-active;
       transform: scale(1.1);
     }
   }
