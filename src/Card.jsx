@@ -1,10 +1,10 @@
 export default function Card(props) {
-  // const { id, advice } = props;
+  const { id, advice } = props;
 
   return(
     <article>
-      <h1>Advice #117</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, alias!</p>
+      <h1>Advice #{id}</h1>
+      <p>{advice}</p>
     </article>
   )
 }
