@@ -68,8 +68,10 @@ body {
 }
 .advice__footer .dice:hover {
   box-shadow: 0px 0px 30px 2px #56e19c;
-  transform: scale(1.05);
-  transition: all 0.2s ease-in;
+}
+.advice__footer .dice:active {
+  box-shadow: 0px 0px 30px 2px #56e19c;
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=index.css.map */
