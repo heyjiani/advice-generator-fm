@@ -13,9 +13,9 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <main className="layout">
       <Card {...adviceSlip}/>
-    </div>
+    </main>
   );
 }
 

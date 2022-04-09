@@ -11,28 +11,29 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
-  padding: 0;
   font-weight: normal;
   font-style: normal;
 }
 
 body {
+  width: 100%;
   height: 100%;
   background-color: #1f2632;
   font-family: "Manrope", sans-serif;
 }
 
+.layout {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .advice {
   width: 550px;
-  height: 350px;
+  height: 330px;
+  position: relative;
   border-radius: 15px;
-  position: absolute;
-  top: 0;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   margin: auto;
   padding: 2em 1.2em;
   background-color: #323a49;
@@ -41,23 +42,34 @@ body {
   text-align: center;
 }
 .advice__header {
-  flex: none;
-  padding-top: 2em;
+  padding-top: 1.5em;
   color: #52ffa8;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 0.3em;
 }
 .advice__text {
-  flex: 1;
-  padding: 1em;
+  padding: 0.8em;
   color: #cee3e9;
-  font-size: 28px;
-  font-weight: 800;
+  font-size: 27px;
 }
 .advice__footer {
-  flex: none;
-  padding-bottom: 2.8em;
+  position: absolute;
+  top: 15em;
+  margin-right: 1em;
+}
+.advice__footer .dice {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  background-color: #52ffa8;
+  margin: 2.5em;
+  border: none;
+}
+.advice__footer .dice:hover {
+  box-shadow: 0px 0px 30px 2px #56e19c;
+  transform: scale(1.05);
+  transition: all 0.2s ease-in;
 }
 
 /*# sourceMappingURL=index.css.map */
