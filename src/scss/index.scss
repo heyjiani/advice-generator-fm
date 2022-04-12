@@ -26,6 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 
   &__header {
     padding-top: 1.5em;
@@ -44,7 +45,15 @@ body {
   &__footer {
     position: absolute;
     top: 15em;
-    margin-right: 1em;
+    margin: auto;
+
+    .divider-desktop {
+      display: block;
+    }
+
+    .divider-mobile {
+      display: none;
+    }
 
     .dice {
       width: 5em;
@@ -62,6 +71,26 @@ body {
     .dice:active {
       box-shadow: $neon-green-active;
       transform: scale(1.1);
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-mobile) {
+
+  .advice {
+    width: 90%;
+
+    &__text {
+      font-size: 24px;
+    }
+
+    &__footer { 
+      .divider-desktop {
+        display: none;
+      }
+      .divider-mobile {
+        display: block;
+      }
     }
   }
 }

@@ -38,6 +38,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 .advice__header {
   padding-top: 1.5em;
@@ -54,7 +55,13 @@ body {
 .advice__footer {
   position: absolute;
   top: 15em;
-  margin-right: 1em;
+  margin: auto;
+}
+.advice__footer .divider-desktop {
+  display: block;
+}
+.advice__footer .divider-mobile {
+  display: none;
 }
 .advice__footer .dice {
   width: 5em;
@@ -70,6 +77,21 @@ body {
 .advice__footer .dice:active {
   box-shadow: 0px 0px 30px 2px #56e19c;
   transform: scale(1.1);
+}
+
+@media only screen and (max-width: 590px) {
+  .advice {
+    width: 90%;
+  }
+  .advice__text {
+    font-size: 24px;
+  }
+  .advice__footer .divider-desktop {
+    display: none;
+  }
+  .advice__footer .divider-mobile {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
