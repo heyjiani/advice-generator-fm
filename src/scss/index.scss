@@ -44,7 +44,7 @@ body {
 
   &__footer {
     position: absolute;
-    top: 15em;
+    top: 15.5em;
     margin: auto;
 
     .divider-desktop {
@@ -70,7 +70,8 @@ body {
     
     .dice:active {
       box-shadow: $neon-green-active;
-      transform: scale(1.1);
+      transform: scale(1.1) rotate(45deg);
+      transition: 0.05s;
     }
   }
 }
