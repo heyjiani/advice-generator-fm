@@ -1,0 +1,20 @@
+@mixin mobile {
+  @media only screen and (max-width: $breakpoint-mobile) {
+    .advice {
+      width: 90%;
+  
+      &__text {
+        font-size: 24px;
+      }
+  
+      &__footer { 
+        .divider-desktop {
+          display: none;
+        }
+        .divider-mobile {
+          display: block;
+        }
+      }
+    }
+  }
+}
