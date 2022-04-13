@@ -1,6 +1,6 @@
 # Frontend Mentor - Advice generator app solution
 
-This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). See it live [here]().
+This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). See it live [here](https://super-haupia-b58bea.netlify.app/).
 
 ### Desktop view
 
